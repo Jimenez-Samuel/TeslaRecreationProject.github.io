@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Tesla Recreation</title>
 </head>
 
 <body>
   <div id="app">
     <header>
       <div class="image-container">
-        <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"></path></svg>
+        <a href=".">
+          <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"></path></svg>
+        </a>
       </div>
-
       <ul>
         <li><a href="#model-y">Vehículos</a></li>
         <li><a href="#energia">Energía</a></li>
@@ -27,8 +28,8 @@
 
       <ul class="options-list">
         <li><button><i class="fa-solid fa-question"></i></button></li>
-        <li><button><i class="fa-regular fa-circle-user"></i></button></li>
         <li><button><i class="fa-solid fa-globe"></i></button></li>
+        <li><button><i class="fa-regular fa-circle-user"></i></button></li>
       </ul>
     </header>
     <main>
@@ -37,32 +38,40 @@
           <h1 class="titles">Model Y</h1>
         </div>
 
-        <div class="buttonContainers">
-          <button class="white">Encargar</button>
-          <button class="black">Prueba de Conducción</button> 
+        <div class="optionsContainer">
+          <div class="buttonsContainer">
+            <button class="white">Encargar</button>
+            <button class="black">Prueba de Conducción</button> 
+          </div>
+          <a href="#">Disponible con Moves lll</a>
         </div> 
 
-        <a href="#">Disponible con Moves lll</a>
+        
       </div>
       <div class="mainZones model-3">
         <div class="title-container">
           <h1 class="titles">Model 3</h1>
         </div>
 
-        <div class="buttonContainers">
-          <button class="black">Encargar</button>
-          <button class="white">Prueba de Conducción</button> 
+        <div class="optionsContainer">
+          <div class="buttonsContainer">
+            <button class="black">Encargar</button>
+            <button class="white">Prueba de Conducción</button> 
+          </div>
+          <a href="#">Disponible con Moves lll</a>
         </div>
 
-        <a href="#">Disponible con Moves lll</a>
+        
       </div>
       <div class="mainZones model-s">
         <div class="title-container">
           <h1 class="titles">Model S</h1>
         </div>
-        <div class="buttonContainers">
-          <button class="black">Encargar</button>
-          <button class="white">Prueba de Conducción</button> 
+        <div class="optionsContainer">
+          <div class="buttonsContainer">
+            <button class="black">Encargar</button>
+            <button class="white">Prueba de Conducción</button> 
+          </div>
         </div> 
       </div>
       <div class="mainZones model-x">
@@ -70,9 +79,27 @@
           <h1 class="titles">Model X</h1>
         </div>
 
-        <div class="buttonContainers">
-          <button class="black">Encargar</button>
-          <button class="white">Prueba de Conducción</button> 
+        <div class="optionsContainer">
+          <div class="buttonsContainer">
+            <button class="black">Encargar</button>
+            <button class="white">Prueba de Conducción</button> 
+          </div>
+        </div> 
+      </div>
+      <video autoplay="true" muted="true" loop="true">
+        <source src="/public/assets/public_video.webm">
+      </video>
+      <div class="mainZones video-zone">
+        <div class="title-container">
+          <h1 class="titles">Disfrute de Tesla</h1>
+          <p class="video-subtitle">Programe una prueba de conducción hoy mismo</p>
+        </div>
+
+        <div class="optionsContainer">
+          <div class="buttonsContainer">
+            <button class="black">Encargar</button>
+            <button class="white">Prueba de Conducción</button> 
+          </div>
         </div> 
       </div>
       <div id="energia" class="mainZones energia">
@@ -102,6 +129,7 @@
       </ul>
     </footer>
   </div>
-</body>
 
+  <script type="module" src="main.js"></script>
+</body>
 </html>

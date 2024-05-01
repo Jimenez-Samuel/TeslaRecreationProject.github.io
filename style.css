@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: dark light;
+  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -18,7 +18,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+html{
+  padding: 0;
+  margin: 0;
+}
 body {
   min-height: 100vh;
   overflow-x: hidden;
@@ -29,6 +32,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .mainZones a{
   color: #000;
@@ -43,7 +48,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 90vh;
+  height: 95vh;
 }
 .model-3{
   background-image: url('https://hips.hearstapps.com/hmg-prod/images/2024-tesla-model-3-european-model-3-64f21a71e3c45.png');
@@ -75,6 +80,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+video{
+  width: 100%;
+  z-index: -1000;
+}
+.video-zone{
+  position: absolute;
+  top: 399vh;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+}
 .mainZones h1{
   margin-top: 15px;
 }
@@ -104,6 +121,12 @@ header button:hover{
   height: 70vh;
   
 }
+.optionsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 header {
   color: #fff;
   padding: 20px 0;
@@ -112,11 +135,13 @@ header {
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
-  background-color: white;
+  background-color: rgb(229, 243, 252);
+  max-height: 50px;
 }
 header svg {
-  width: 150px;
+  width: 120px;
   cursor: pointer;
+  margin-left: 30px;
 }
 header ul{
   display: flex;
@@ -128,7 +153,7 @@ header ul{
 header .options-list{
   width: 100%;
   place-content: end;
-  
+  margin-right: 20px;
 }
 header .image-container{
   width: 100%;
@@ -151,7 +176,7 @@ header button{
   background-color: transparent;
   color: #000;
   border: 0;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
   width: 30px;
   height: 35px;
@@ -178,4 +203,27 @@ footer ul{
 }
 footer ul li{
   padding: 0 10px;
+}
+@media (max-width: 727px) {
+  #app{
+    width: 100vw;
+  }
+}
+@media (max-width: 404px) {
+  .buttonsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonsContainer button{
+    margin: 3px;
+  }
+  .optionsContainer{
+    padding: 15px;
+  }
+  .optionsContainer a{
+    text-align: center;
+  }
+
 }

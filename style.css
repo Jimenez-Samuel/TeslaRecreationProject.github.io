@@ -82,7 +82,7 @@ body {
 }
 video{
   width: 100%;
-  z-index: -1000;
+  z-index: -1;
 }
 .video-zone{
   position: absolute;

@@ -6,19 +6,20 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tesla Recreation</title>
 </head>
 
 <body>
   <div id="app">
-    <header>
+    <header class="header">
       <div class="image-container">
         <a href=".">
-          <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"></path></svg>
+          <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path></svg>
         </a>
       </div>
-      <ul>
+      <ul class="options-list">
         <li><a href="#model-y">Vehículos</a></li>
         <li><a href="#energia">Energía</a></li>
         <li><a href="#">Carga</a></li>
@@ -26,110 +27,116 @@
         <li><a href="#tienda">Tienda</a></li>
       </ul>
 
-      <ul class="options-list">
-        <li><button><i class="fa-solid fa-question"></i></button></li>
-        <li><button><i class="fa-solid fa-globe"></i></button></li>
-        <li><button><i class="fa-regular fa-circle-user"></i></button></li>
+      <ul class="options-menu-list">
+        <li><a href="#"><i class="fa-solid fa-question"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+        <li><a href="#"><i class="fa-regular fa-circle-user"></i></a></li>
       </ul>
+
+      <div class="menu-cellphone">
+        <div class="dropdown">
+          <button class="dropdown-button">Menú</button>
+          <div class="dropdown-content">
+            <a href="#model-y">Vehículos</a>
+            <a href="#energia">Energía</a>
+            <a href="#">Carga</a>
+            <a href="#">Descubrir</a>
+            <a href="#tienda">Tienda</a>
+            <a href="#">Soporte</a>
+            <a href="#"><i class="fa-solid fa-globe"></i> Idioma</a>
+            <a href="#"><i class="fa-regular fa-circle-user"></i> Cuenta</a>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <div id="model-y" class="mainZones model-y">
+      <section class="mainZones video-zone" data-header-color="white">
+        <video autoplay loop muted>
+          <source src="./public/assets/TeslaVideo.webm">
+        </video>
+        <div class="content">
+          <div class="title-container">
+            <h1 class="titles">Disfrute de Tesla</h1>
+            <p class="video-subtitle">Programe una prueba de conducción hoy mismo</p>
+          </div>
+
+          <div class="optionsContainer">
+            <div class="asContainer">
+              <a href="#" class="transparent">Prueba de Conducción</a> 
+            </div>
+          </div> 
+        </div>
+      </section>
+      <section id="model-y" class="mainZones model-y" data-header-color="black">
         <div class="title-container">
           <h1 class="titles">Model Y</h1>
         </div>
 
         <div class="optionsContainer">
-          <div class="buttonsContainer">
-            <button class="white">Encargar</button>
-            <button class="black">Prueba de Conducción</button> 
+          <div class="asContainer">
+            <a href="#" class="whiteButton">Encargar</a>
+            <a href="#" class="blackButton">Prueba de Conducción</a> 
           </div>
-          <a href="#">Disponible con Moves lll</a>
+          <a href="#" class="optionA">Disponible con Moves lll</a>
         </div> 
+      </section>
 
-        
-      </div>
-      <div class="mainZones model-3">
+      <section class="mainZones model-3" data-header-color="black">
         <div class="title-container">
           <h1 class="titles">Model 3</h1>
         </div>
 
         <div class="optionsContainer">
-          <div class="buttonsContainer">
-            <button class="black">Encargar</button>
-            <button class="white">Prueba de Conducción</button> 
+          <div class="asContainer">
+            <a href="#" class="blackButton">Encargar</a>
+            <a href="#" class="whiteButton">Prueba de Conducción</a> 
           </div>
-          <a href="#">Disponible con Moves lll</a>
+          <a href="#" class="optionA">Disponible con Moves lll</a>
         </div>
+      </section>
 
-        
-      </div>
-      <div class="mainZones model-s">
+      <section class="mainZones model-s" data-header-color="black">
         <div class="title-container">
           <h1 class="titles">Model S</h1>
         </div>
         <div class="optionsContainer">
-          <div class="buttonsContainer">
-            <button class="black">Encargar</button>
-            <button class="white">Prueba de Conducción</button> 
+          <div class="asContainer">
+            <a href="#" class="blackButton">Encargar</a>
+            <a href="#" class="whiteButton">Prueba de Conducción</a> 
           </div>
         </div> 
-      </div>
-      <div class="mainZones model-x">
+      </section>
+
+      <section class="mainZones model-x" data-header-color="black">
         <div class="title-container">
           <h1 class="titles">Model X</h1>
         </div>
 
         <div class="optionsContainer">
-          <div class="buttonsContainer">
-            <button class="black">Encargar</button>
-            <button class="white">Prueba de Conducción</button> 
+          <div class="asContainer">
+            <a href="#" class="blackButton">Encargar</a>
+            <a href="#" class="whiteButton">Prueba de Conducción</a> 
           </div>
         </div> 
-      </div>
-      <video autoplay="true" muted="true" loop="true">
-        <source src="./public/assets/public_video.webm">
-      </video>
-      <div class="mainZones video-zone">
-        <div class="title-container">
-          <h1 class="titles">Disfrute de Tesla</h1>
-          <p class="video-subtitle">Programe una prueba de conducción hoy mismo</p>
-        </div>
+      </section>
 
-        <div class="optionsContainer">
-          <div class="buttonsContainer">
-            <button class="black">Encargar</button>
-            <button class="white">Prueba de Conducción</button> 
-          </div>
-        </div> 
-      </div>
-      <div id="energia" class="mainZones energia">
+      <section id="energia" class="mainZones energia" data-header-color="black">
         <div class="title-container">
           <h1 class="titles">Solar y Powerwall</h1>
           <p class="solar-subtitle">Enegía para todos</p>
         </div>
 
-        <button class="black">Saber más</button> 
-      </div>
-      <div id="tienda" class="mainZones tienda">
+        <a href="#" class="blackButton">Saber más</a> 
+      </section>
+      <section id="tienda" class="mainZones tienda" data-header-color="black">
         <div class="title-container">
           <h1 class="titles">Accesorios</h1>
         </div>
 
-        <button class="black">Comprar ahora</button> 
-      </div>
+        <a href="#" class="whiteButton">Comprar ahora</a> 
+      </section>
     </main>
-    <footer>
-      <ul>
-        <li><a href="#">Tesla <i class="fa-regular fa-copyright"></i> 2024</a></li>
-        <li><a href="#">Privacidad y legal</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Noticias</a></li>
-        <li><a href="#">Seguir informado</a></li>
-        <li><a href="#">Localiazción de tiendas</a></li>
-      </ul>
-    </footer>
   </div>
-
   <script type="module" src="main.js"></script>
 </body>
 </html>

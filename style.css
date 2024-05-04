@@ -55,6 +55,7 @@ main{
   overflow-x: hidden;
 }
 .mainZones{
+  text-align: center;
   height: 100vh;
   color: #000;
   display: flex;
@@ -64,7 +65,6 @@ main{
   width: 100%;
   scroll-snap-align: start;
   overflow: hidden;
-  text-align: center;
 }
 .mainZones a{
   font-size: 13px;

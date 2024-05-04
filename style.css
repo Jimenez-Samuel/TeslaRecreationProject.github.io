@@ -64,6 +64,7 @@ main{
   width: 100%;
   scroll-snap-align: start;
   overflow: hidden;
+  text-align: center;
 }
 .mainZones a{
   font-size: 13px;
@@ -260,7 +261,7 @@ header a{
   transition: 0.3s ease-out;
   padding: 7px;
 }
-header a:hover{
+header .option-menu-a:hover{
   background-color: #d1d1d1a3;
 }
 header button{

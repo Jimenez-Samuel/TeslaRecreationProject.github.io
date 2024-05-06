@@ -46,7 +46,6 @@ body {
   overflow: hidden;
   font-family: 'Gotham SSm A', sans-serif;
   font-weight: 500;
-  scroll-behavior: smooth;
 }
 main{
   scroll-snap-type: y mandatory;

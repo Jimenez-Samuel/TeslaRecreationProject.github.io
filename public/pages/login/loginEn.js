@@ -5,7 +5,7 @@ const lenguageButton = document.querySelector('.lenguage-button')
 const body = document.body
 const closeButton = document.querySelector('.close-button')
 
-const EnButton = document.querySelector('.En-button')
+const EsButton = document.querySelector('.Es-button')
 
 lenguageButton.addEventListener('click', () => {
   body.classList.add('active');
@@ -15,10 +15,9 @@ closeButton.addEventListener('click', () => {
   body.classList.remove('active');
 })
 
-EnButton.addEventListener('click', () => {
-  window.location.href = 'loginEn.html';
+EsButton.addEventListener('click', () => {
+  window.location.href = 'login.html';
 })
-
 function update () {
   requestAnimationFrame(update)
   ifFunction()
